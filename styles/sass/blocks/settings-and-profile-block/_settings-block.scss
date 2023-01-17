@@ -1,0 +1,160 @@
+.settings-block {
+  width: 15%;
+  height: 500px;
+
+  border-radius: 10px;
+  border: 2px solid $black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0px 0px 20px -5px $gray;
+}
+
+.settings-block__button {
+  width: 100%;
+  height: 10%;
+
+  padding-left: 5%;
+
+  background: none;
+
+  border: none;
+
+  display: flex;
+  align-items: center;
+
+  font-family: inherit;
+  font-size: 24px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $light-gray;
+    border-bottom: 2px dashed $white;
+    border-top: 2px dashed $white;
+  }
+
+  &:nth-child(2) {
+    margin-top: 5%;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:hover::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+
+      background: url('/styles/img/study-mode__logo_hover.png');
+      background-size: cover;
+    }
+
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+
+      background: url('/styles/img/study-mode__logo.png');
+      background-size: cover;
+    }
+  }
+  &:nth-child(3) {
+    &:hover {
+      color: $red;
+    }
+
+    &:hover::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+
+      background: url('/styles/img/repeat-mode__logo_hover.png');
+      background-size: cover;
+    }
+
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+
+      background: url('/styles/img/repeat-mode__logo.png');
+      background-size: cover;
+    }
+  }
+  &:nth-child(4) {
+    &:hover {
+      color: $purple-heart;
+    }
+
+    &:hover::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+
+      background: url('/styles/img/setting__logo_hover.png');
+      background-size: cover;
+    }
+
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+
+      background: url('/styles/img/setting__logo.png');
+      background-size: cover;
+    }
+  }
+}
+
+.settings-block__button-text {
+  margin-left: 5%;
+}
+
+// Mods
+
+.settings-block__button_active {
+  background-color: $light-gray;
+  border-bottom: 2px dashed $white;
+  border-top: 2px dashed $white;
+
+  &:nth-child(2) {
+    margin-top: 5%;
+
+    color: $blue;
+
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+
+      background: url('/styles/img/study-mode__logo_hover.png');
+      background-size: cover;
+    }
+  }
+  &:nth-child(3) {
+    color: $red;
+
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+
+      background: url('/styles/img/repeat-mode__logo_hover.png');
+      background-size: cover;
+    }
+  }
+  &:nth-child(4) {
+    color: $purple-heart;
+
+    &::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+
+      background: url('/styles/img/setting__logo_hover.png');
+      background-size: cover;
+    }
+  }
+}

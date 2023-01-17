@@ -1,0 +1,91 @@
+.profile-block {
+  width: 100%;
+  height: 40%;
+
+  background-color: $light-gray;
+  border-radius: 10px 10px 0 0;
+
+  box-shadow: 0px -10px 30px -24px $gray inset;
+
+  p {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  span {
+    color: $dark-gray;
+  }
+}
+
+.profile-block__avatar {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+}
+
+.authorized-user__block {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.authorization-block {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-weight: 600;
+    margin-bottom: 3%;
+  }
+  input {
+    width: 60%;
+
+    font-family: inherit;
+    outline: none;
+
+    border: none;
+    border-radius: 10px;
+
+    padding-left: 5%;
+
+    box-shadow: 0px 0px 10px -5px $dark-gray;
+
+    font-size: 18px;
+  }
+}
+
+.profile-block__submit-btn {
+  margin-top: 4%;
+  margin-bottom: 5%;
+
+  background-color: $light-gray;
+
+  border: 2px dashed $black !important;
+
+  border-radius: 0 !important;
+
+  transition: 200ms;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+
+    cursor: pointer;
+  }
+}
+
+// Mods
+
+.profile-block_hidden {
+  display: none;
+}

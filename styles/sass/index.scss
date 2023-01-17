@@ -1,0 +1,14 @@
+// Base
+@import 'base/reset';
+@import 'base/vars';
+@import 'base/base';
+@import 'base/animations';
+
+// Blocks
+// Settings & Profile block
+@import 'blocks/settings-and-profile-block/settings-block';
+@import 'blocks/settings-and-profile-block/profile-block';
+
+// Study mode block
+@import 'blocks/study-mode/study-mode-block';
+@import 'blocks/study-mode/study-mode-stage-1';

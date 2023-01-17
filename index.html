@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <p class="header__logo">MyDictionary.io</p>
+      </header>
+    </div>
+    <div class="container">
+      <div class="settings-block">
+        <div class="profile-block">
+          <div class="authorized-user__block">
+            <img
+              src="/styles/img/person.png"
+              alt=""
+              class="profile-block__avatar"
+            />
+            <p>User: <span class="profile-block__user-name">Anonymous</span></p>
+            <p>
+              Learning progress:
+              <span class="profile-block__user-progress">10%</span>
+            </p>
+          </div>
+          <form class="authorization-block profile-block_hidden">
+            <p>Login:</p>
+            <input type="text" class="profile-block__login-field" />
+            <p>Password:</p>
+            <input type="password" class="profile-block__password-field" />
+            <input
+              type="submit"
+              value="Confirm"
+              class="profile-block__submit-btn"
+            />
+          </form>
+        </div>
+        <button class="settings-block__button settings-block__button_active">
+          <p class="settings-block__button-text">Study mode</p>
+        </button>
+        <button class="settings-block__button">
+          <p class="settings-block__button-text">Repeat mode</p>
+        </button>
+        <button class="settings-block__button">
+          <p class="settings-block__button-text">Settings</p>
+        </button>
+      </div>
+      <div class="interface-block">
+        <div class="study-mode-block">
+          <div class="progress-bar">
+            <div class="progress-bar__value"></div>
+          </div>
+          <div class="levels-block">
+            <div class="levels-block__level">
+              <img
+                src="/styles/img/levels/1.png"
+                alt=""
+                class="levels-block__level-img"
+              />
+              <p class="levels-block__level-name">People</p>
+            </div>
+            <div class="levels-block__level">
+              <img
+                src="/styles/img/levels/2.png"
+                alt=""
+                class="levels-block__level-img"
+              />
+              <p class="levels-block__level-name">Family</p>
+            </div>
+            <div class="levels-block__level">
+              <img
+                src="/styles/img/levels/3.png"
+                alt=""
+                class="levels-block__level-img"
+              />
+              <p class="levels-block__level-name">Work</p>
+            </div>
+            <div class="levels-block__level">
+              <img
+                src="/styles/img/levels/4.png"
+                alt=""
+                class="levels-block__level-img"
+              />
+              <p class="levels-block__level-name">City</p>
+            </div>
+            <div class="levels-block__level">
+              <img
+                src="/styles/img/levels/5.png"
+                alt=""
+                class="levels-block__level-img"
+              />
+              <p class="levels-block__level-name">Flat</p>
+            </div>
+            <div class="levels-block__level">
+              <img
+                src="/styles/img/levels/6.png"
+                alt=""
+                class="levels-block__level-img"
+              />
+              <p class="levels-block__level-name">Food</p>
+            </div>
+            <div class="levels-block__level">
+              <img
+                src="/styles/img/levels/7.png"
+                alt=""
+                class="levels-block__level-img"
+              />
+              <p class="levels-block__level-name">Time & dates</p>
+            </div>
+            <div class="levels-block__level">
+              <img
+                src="/styles/img/levels/8.png"
+                alt=""
+                class="levels-block__level-img"
+              />
+              <p class="levels-block__level-name">Things</p>
+            </div>
+            <div class="levels-block__level">
+              <img
+                src="/styles/img/levels/9.png"
+                alt=""
+                class="levels-block__level-img"
+              />
+              <p class="levels-block__level-name">Numbers</p>
+            </div>
+            <div class="levels-block__level">
+              <img
+                src="/styles/img/levels/10.png"
+                alt=""
+                class="levels-block__level-img"
+              />
+              <p class="levels-block__level-name">Colors</p>
+            </div>
+            <div class="levels-block__level">
+              <img
+                src="/styles/img/levels/11.png"
+                alt=""
+                class="levels-block__level-img"
+              />
+              <p class="levels-block__level-name">Pronouns & verbs</p>
+            </div>
+          </div>
+          <div class="study-mode__container">
+            <div class="study-mode__statistics">
+              <p>Module: <span class="study-mode__module-name">People</span></p>
+              <p>
+                Module progress:
+                <span class="study-mode__module-progress">5/10</span>
+              </p>
+            </div>
+            <div
+              class="study-mode__stage-block first-stage__block"
+              id="first_stage"
+            >
+              <button class="first-stage__audio-btn"></button>
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2942/2942433.png"
+                alt=""
+                class="first-stage__img"
+              />
+
+              <div class="first-stage__content">
+                <div class="first-stage__info-text">
+                  <p class="first-stage__word">Mühendis</p>
+                  <p class="first-stage__translation">Engineer</p>
+                </div>
+                <button class="first-stage__next-btn"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
